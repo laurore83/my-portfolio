@@ -13,6 +13,7 @@ import ContextProvider from "./context/Context.jsx";
 import Home from "./pages/Home.jsx";
 import Register from "./pages/Register.jsx";
 import ContactForm from "./pages/ContactForm.jsx";
+import MyPastProjects from "./pages/MyPastProjects.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/mesprojets",
         element: <MyProjects />,
+      },
+      {
+        path: "/mesanciensprojets",
+        element: <MyPastProjects />,
       },
       {
         path: "/contact",

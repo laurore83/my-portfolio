@@ -67,7 +67,7 @@ export default function Home() {
             ))}
           </div>
           <div className="btn-plus">
-            <MDBBtn className="rounded-pill" color="dark" href="#">
+            <MDBBtn className="rounded-pill" color="dark" href="/mesprojets">
               Voir +
             </MDBBtn>
           </div>
@@ -79,7 +79,11 @@ export default function Home() {
               ))}
             </div>
             <div className="btn-plus">
-              <MDBBtn className="rounded-pill" color="dark" href="#">
+              <MDBBtn
+                className="rounded-pill"
+                color="dark"
+                href="/mesanciensprojets"
+              >
                 Voir +
               </MDBBtn>
             </div>
