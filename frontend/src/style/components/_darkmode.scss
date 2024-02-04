@@ -29,6 +29,18 @@ body {
     .navbar-collapse {
       background-color: #171616;
     }
+    .nav-link {
+      background: #171616;
+      color: rgb(248 238 225);
+      font-weight: lighter;
+    }
+    .btn-group > .btn,
+    .btn-group-vertical > .btn {
+      color: rgb(248 238 225);
+      background: #171616;
+      font-weight: lighter;
+      border: none;
+    }
     .switch input + span {
       background: rgb(248 238 225);
     }

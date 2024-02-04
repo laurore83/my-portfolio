@@ -46,11 +46,13 @@ export default function App() {
           </MDBNavbarToggler>
           <MDBCollapse navbar open={openNav}>
             <MDBNavbarNav>
-              <MDBNavbarItem>
-                <MDBNavbarLink href="/">Home</MDBNavbarLink>
-              </MDBNavbarItem>
-
               <DropDown />
+
+              <MDBNavbarItem>
+                <MDBNavbarLink aria-current="" href="/">
+                  Home
+                </MDBNavbarLink>
+              </MDBNavbarItem>
 
               <MDBNavbarItem>
                 <MDBNavbarLink href="/#a_propos">A propos de Moi</MDBNavbarLink>

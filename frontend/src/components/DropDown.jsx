@@ -12,18 +12,16 @@ export default function DropDown() {
       <MDBDropdownToggle color="light">Projets</MDBDropdownToggle>
       <MDBDropdownMenu>
         <MDBDropdownItem>
-          <MDBNavbarLink href="/mesprojets">Projets Récents</MDBNavbarLink>
+          <MDBNavbarLink href="/mesprojets">Récent</MDBNavbarLink>
         </MDBDropdownItem>
         <MDBDropdownItem>
           <MDBNavbarLink href="/Hackathons">Hackathon</MDBNavbarLink>
         </MDBDropdownItem>
         <MDBDropdownItem>
-          <MDBNavbarLink href="/projetsperso">Projets Perso</MDBNavbarLink>
+          <MDBNavbarLink href="/projetsperso">Perso</MDBNavbarLink>
         </MDBDropdownItem>
         <MDBDropdownItem>
-          <MDBNavbarLink href="/mesanciensprojets">
-            Anciens Projets
-          </MDBNavbarLink>
+          <MDBNavbarLink href="/mesanciensprojets">Ancien</MDBNavbarLink>
         </MDBDropdownItem>
       </MDBDropdownMenu>
     </MDBDropdown>
