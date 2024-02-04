@@ -14,6 +14,8 @@ import Home from "./pages/Home.jsx";
 import Register from "./pages/Register.jsx";
 import ContactForm from "./pages/ContactForm.jsx";
 import MyPastProjects from "./pages/MyPastProjects.jsx";
+import Hackathon from "./pages/Hackathons.jsx";
+import ProjectsPerso from "./pages/ProjetsPerso.jsx";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
       {
         path: "/mesanciensprojets",
         element: <MyPastProjects />,
+      },
+      {
+        path: "/hackathons",
+        element: <Hackathon />,
+      },
+      {
+        path: "/projetsperso",
+        element: <ProjectsPerso />,
       },
       {
         path: "/contact",

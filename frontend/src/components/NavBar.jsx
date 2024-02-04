@@ -12,6 +12,7 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 import ToggleButton from "./ToggleButton";
+import DropDown from "./DropDown";
 
 export default function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -46,18 +47,11 @@ export default function App() {
           <MDBCollapse navbar open={openNav}>
             <MDBNavbarNav>
               <MDBNavbarItem>
-                <MDBNavbarLink active aria-current="" href="/">
-                  Home
-                </MDBNavbarLink>
+                <MDBNavbarLink href="/">Home</MDBNavbarLink>
               </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink href="/mesprojets">Projets</MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink href="/mesanciensprojets">
-                  Anciens Projets
-                </MDBNavbarLink>
-              </MDBNavbarItem>
+
+              <DropDown />
+
               <MDBNavbarItem>
                 <MDBNavbarLink href="/#a_propos">A propos de Moi</MDBNavbarLink>
               </MDBNavbarItem>
