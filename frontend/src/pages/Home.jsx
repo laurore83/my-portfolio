@@ -1,3 +1,4 @@
+import CVButton from "../components/CVbutton";
 import { useTheContext } from "../context/Context";
 import { Card, projetProfil } from "/src/components/Card";
 import { MDBBtn, MDBCardImage } from "mdb-react-ui-kit";
@@ -37,6 +38,8 @@ export default function Home() {
             souhaite approfondir mes connaissances . Prête à coder avec style et
             efficacité !”
           </p>
+          <CVButton />
+
           <div className="langages">
             {langages.map((langage) => (
               <div className="circle" key={langage.id}>
