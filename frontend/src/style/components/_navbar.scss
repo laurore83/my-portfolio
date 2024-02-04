@@ -1,0 +1,78 @@
+.content {
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 20px;
+    padding-block: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Assurez-vous que la barre de navigation est au-dessus du contenu */
+    /* Couleur de fond de la barre de navigation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour la séparation avec le contenu */
+    background-color: #f1f1f1 !important;
+  }
+
+  //toggle
+  .switch {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .switch input {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 0;
+    height: 0;
+  }
+  .switch input + span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1b2430;
+    border-radius: 20px;
+  }
+
+  .switch input:checked + span {
+    background: #1b2430;
+  }
+  .switch input + span:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    width: 25px;
+    height: 25px;
+    background: rgb(248 238 225);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s;
+  }
+
+  .switch input:checked + span:before {
+    left: 20px;
+  }
+}
+.content {
+  padding-top: 64px; /* Ajustez la valeur en fonction de la hauteur de votre barre de navigation */
+}
+@media only screen and (min-width: 768px) {
+  .content {
+    .navbar {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .navbar-collapse {
+      background-color: #f1f1f1;
+    }
+  }
+}

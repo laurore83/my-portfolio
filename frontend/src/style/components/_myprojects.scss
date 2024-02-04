@@ -1,0 +1,35 @@
+.projets-container {
+  .project-first-view {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Deux colonnes égales */
+  }
+
+  .grid-item {
+    padding: 0;
+  }
+  .grid-item .resume-projet {
+    border-left: none;
+  }
+  .grid-item .photo-projet {
+    padding: 45px;
+  }
+  .projet {
+    grid-template-rows: 80% 20%; /* La première ligne occupe 80%, la deuxième ligne occupe 20% de l'espace */
+
+    img {
+      width: 50%;
+    }
+  }
+  .github-link {
+    border-top: 2px solid #1b2430;
+  }
+  li {
+    list-style-type: none;
+  }
+  @media only screen and (min-width: 768px) {
+    .project-first-view {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+    }
+  }
+}

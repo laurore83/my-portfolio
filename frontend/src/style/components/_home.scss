@@ -1,0 +1,207 @@
+.accueil {
+  display: flex;
+  background-color: #171616;
+  color: rgb(248 238 225);
+  flex-direction: row;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-block: 120px;
+  margin-top: -65px;
+}
+.accueil h1 {
+  padding-top: 30px;
+  margin-top: -100px;
+  margin-bottom: 55px;
+}
+.accueil h3 {
+  text-align: end;
+  font-size: 20px;
+}
+.accueil-title {
+  font-family: "Italiana", sans-serif;
+  background-color: #171616;
+  color: rgb(248, 213, 168);
+  margin-inline: 15px;
+}
+.img-profil-home {
+  width: 60%;
+  padding-top: 10%;
+  margin-right: 25px;
+}
+p {
+  color: #171616;
+}
+.a-propos {
+  margin-inline: 20px;
+  margin-block: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.a-propos-title {
+  font-size: 30px;
+  border-bottom: #171616;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.img2-container {
+  background-color: #171616;
+}
+.img2 {
+  padding-inline: 20px;
+  padding-block: 100px;
+  background-color: #171616;
+  width: 50%;
+}
+.langages {
+  display: flex;
+}
+.circle {
+  position: relative;
+  height: 80px;
+  top: 87px;
+  margin: 10px;
+  width: 65px;
+  background: rgb(248 238 225);
+  color: #171616;
+
+  height: 65px;
+  text-align: center;
+  border-radius: 100px;
+  line-height: 60px; /* 100 - 10 */
+  font-weight: bold;
+}
+.card {
+  color: #171616;
+  margin: 35px;
+  width: 300px; /* Vous pouvez ajuster la largeur selon vos besoins */
+  height: 200px; /* Vous pouvez ajuster la hauteur selon vos besoins */
+  /* Rembourrage à l'intérieur de chaque carte, optionnel */
+}
+
+.title-recent-project {
+  margin-top: 125px;
+  padding: 37px;
+  margin-bottom: 0;
+  background-color: rgb(248 238 225);
+  font-size: 47px;
+}
+.recent-project {
+  border-top: 1px solid #171616;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 20px;
+  background-color: rgb(248 238 225);
+}
+
+.past-project {
+  border-top: 1px solid #171616;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 20px;
+  background-color: rgb(248 238 225);
+}
+.text-dark {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.btn-plus {
+  text-align: end;
+  margin: 30px;
+}
+.ronded-pill {
+  font-weight: bold;
+}
+@media only screen and (min-width: 768px) {
+  .card-container {
+    border-right: 1px solid #171616;
+  }
+  .accueil {
+    padding-top: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .a-propos {
+    margin-block: 100px;
+    flex-direction: row;
+    align-items: normal;
+  }
+  .a-propos-title {
+    font-size: 65px;
+  }
+  .title-recent-project {
+    font-size: 65px;
+    margin-bottom: 75px;
+    margin-top: 150px;
+  }
+  .card {
+    margin: 15px;
+  }
+  .recent-project {
+    justify-content: space-around;
+    border-right: 1px solid #171616;
+    display: flex;
+    flex-direction: row;
+  }
+  .past-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .text-dark {
+    position: relative;
+    height: 70px;
+    top: 87px;
+    margin: 10px;
+    width: 65px;
+    font-size: 30px;
+    font-weight: bolder;
+    writing-mode: vertical-lr; /* Basculement vertical du texte */
+    white-space: nowrap; /* Empêcher le texte de se retourner à la ligne */
+    transform: scale(-1); /* Inversion verticale du texte */
+    transform-origin: bottom; /* Point d'origine de l'inversion verticale */
+  }
+  .navbar > .container-fluid {
+    height: 80px;
+  }
+  .img-profil-home {
+    width: 30%;
+    padding-top: 155px;
+  }
+  .card-img {
+    width: 200px;
+    height: 400px;
+  }
+  img {
+    object-fit: contain;
+  }
+  .img2-container {
+    background-color: #171616;
+  }
+  .img2 {
+    padding-inline: 20px;
+    padding-block: 100px;
+    background-color: #171616;
+    width: 100%;
+  }
+  .langages {
+    display: flex;
+  }
+  .circle {
+    margin: 10px;
+    width: 65px;
+    background: #171616;
+    color: rgb(248, 213, 168);
+
+    height: 65px;
+    text-align: center;
+    border-radius: 100px;
+    line-height: 60px; /* 100 - 10 */
+  }
+}

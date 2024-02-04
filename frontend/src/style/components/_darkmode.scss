@@ -1,0 +1,132 @@
+body {
+  color: #171616;
+  // background-color: rgb(248 238 225);
+}
+
+.app {
+  background-color: rgb(248 238 225);
+  color: #171616;
+  &.dark-theme {
+    background-color: #171616;
+    color: rgb(248 238 225);
+  }
+}
+.card {
+  background-color: #171616;
+  color: rgb(248, 213, 168);
+  &.dark-theme {
+    background-color: rgb(248 238 225);
+    color: #171616;
+  }
+}
+.dark-theme {
+  background-color: #171616;
+  color: rgb(248 238 225);
+  .content {
+    .navbar {
+      background-color: #171616 !important;
+    }
+    .navbar-collapse {
+      background-color: #171616;
+    }
+    .switch input + span {
+      background: rgb(248 238 225);
+    }
+    .switch input + span:before {
+      content: "";
+
+      background: #171616;
+    }
+  }
+  //page home
+
+  .accueil {
+    background-color: rgb(248 238 225);
+    color: #171616;
+  }
+  .accueil-title {
+    background-color: rgb(248 238 225);
+    color: #171616;
+  }
+
+  // .card-body {
+  //   color: #171616;
+  // }
+  // .card-title {
+  //   background-color: #171616;
+  // }
+  .card-text {
+    //   // background-color: #171616;
+    color: rgb(248, 213, 168);
+  }
+  .title-recent-project {
+    background-color: #171616;
+    color: rgb(248, 213, 168);
+  }
+  .recent-project {
+    padding-top: 20px;
+    background-color: #171616;
+  }
+
+  .past-project {
+    padding-top: 20px;
+
+    background-color: #171616;
+  }
+  .content {
+    width: 80%;
+  }
+  p {
+    color: rgb(248, 213, 168);
+  }
+  .circle {
+    margin: 10px;
+    width: 65px;
+    background: rgb(248, 213, 168);
+
+    height: 65px;
+    text-align: center;
+    border-radius: 100px;
+    line-height: 60px; /* 100 - 10 */
+  }
+  .recent-project {
+    border-top: 1px solid rgb(248, 213, 168);
+  }
+  .past-project {
+    border-top: 1px solid rgb(248, 213, 168);
+  }
+  .btn-dark {
+    background-color: rgb(248, 213, 168);
+    color: #171616;
+  }
+  .text-dark {
+    color: rgb(248, 213, 168) !important;
+  }
+  .a-propos-title {
+    border-bottom: 1px solid rgb(248, 213, 168);
+  }
+
+  //page projet
+  .grid-item {
+    background-color: #171616;
+    border-left: 2px solid rgb(248, 213, 168);
+    border-bottom: 2px solid rgb(248, 213, 168);
+  }
+  .grid-item .photo-projet {
+    border-left-width: 0 !important;
+  }
+  .grid-item .full-height {
+    border-bottom: 1px solid rgb(248, 213, 168);
+  }
+  #barre1,
+  #barre2,
+  #barre3,
+  #barre4 {
+    background-color: rgb(248, 213, 168); /* Couleur du trait */
+  }
+  .icon {
+    border-radius: 50%;
+
+    background-color: rgb(248, 213, 168);
+  }
+}

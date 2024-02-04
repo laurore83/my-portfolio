@@ -1,0 +1,142 @@
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Deux lignes égales */
+  grid-template-columns: 1fr auto; /* La première colonne prend le reste de l'espace, la deuxième colonne ajuste automatiquement sa largeur */
+  height: 100vh; /* Hauteur de la grille égale à la hauteur de la vue (viewport) */
+}
+
+/* Style pour les éléments de la grille */
+.grid-item {
+  background-color: rgb(248, 238, 225);
+  padding: 20px;
+  text-align: center;
+}
+.grid-item-list {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: start;
+}
+.grid-item:nth-child(2) {
+  border-left: 2px solid #1b2430; /* Trait de séparation à gauche de la deuxième colonne */
+}
+
+.grid-item:nth-child(1) {
+  border-bottom: 2px solid #1b2430; /* Trait de séparation à gauche de la deuxième colonne */
+}
+
+/* Style pour la case qui prend toute la hauteur dans la deuxième colonne */
+.full-height {
+  grid-row: span 2; /* Prend deux lignes */
+}
+/* Style pour le texte basculé verticalement */
+.vertical-text {
+  font-size: 30px;
+  font-weight: bolder;
+  writing-mode: vertical-lr; /* Basculement vertical du texte */
+  white-space: nowrap; /* Empêcher le texte de se retourner à la ligne */
+  transform: scale(-1); /* Inversion verticale du texte */
+  transform-origin: bottom; /* Point d'origine de l'inversion verticale */
+}
+.contact {
+  text-align: start;
+  font-weight: bold;
+  font-size: 47px;
+}
+.img-contact {
+  left: 50px;
+  position: relative;
+  top: 16px;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.icon {
+  width: 8%;
+}
+.coord {
+  font-weight: normal;
+}
+#barre1 {
+  display: inline-block;
+  width: 37px; /* Largeur de votre trait */
+  height: 1px; /* Hauteur du trait */
+  background-color: black; /* Couleur du trait */
+  vertical-align: middle; /* Pour aligner verticalement avec le texte */
+}
+#barre2 {
+  display: inline-block;
+  width: 50px; /* Largeur de votre trait */
+  height: 1px; /* Hauteur du trait */
+  background-color: black; /* Couleur du trait */
+  vertical-align: middle; /* Pour aligner verticalement avec le texte */
+}
+#barre3 {
+  display: inline-block;
+  width: 57px; /* Largeur de votre trait */
+  height: 1px; /* Hauteur du trait */
+  background-color: black; /* Couleur du trait */
+  vertical-align: middle; /* Pour aligner verticalement avec le texte */
+}
+#barre4 {
+  display: inline-block;
+  width: 80px; /* Largeur de votre trait */
+  height: 1px; /* Hauteur du trait */
+  background-color: black; /* Couleur du trait */
+  vertical-align: middle; /* Pour aligner verticalement avec le texte */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li div {
+  display: inline-block; /* Afficher les div en ligne */
+  vertical-align: middle; /* Alignement vertical avec la barre */
+}
+
+@media only screen and (min-width: 768px) {
+  .img-contact {
+    left: 253px;
+    top: -17px;
+    width: 25%;
+  }
+  .contact {
+    font-size: 60px;
+  }
+  li {
+    font-size: 25px;
+  }
+
+  .icon {
+    width: 5%;
+  }
+  #barre1 {
+    display: inline-block;
+    width: 142px; /* Largeur de votre trait */
+    height: 1px; /* Hauteur du trait */
+    background-color: black; /* Couleur du trait */
+    vertical-align: middle; /* Pour aligner verticalement avec le texte */
+  }
+  #barre2 {
+    display: inline-block;
+    width: 163px; /* Largeur de votre trait */
+    height: 1px; /* Hauteur du trait */
+    background-color: black; /* Couleur du trait */
+    vertical-align: middle; /* Pour aligner verticalement avec le texte */
+  }
+  #barre3 {
+    display: inline-block;
+    width: 172px; /* Largeur de votre trait */
+    height: 1px; /* Hauteur du trait */
+    background-color: black; /* Couleur du trait */
+    vertical-align: middle; /* Pour aligner verticalement avec le texte */
+  }
+  #barre4 {
+    display: inline-block;
+    width: 192px; /* Largeur de votre trait */
+    height: 1px; /* Hauteur du trait */
+    background-color: black; /* Couleur du trait */
+    vertical-align: middle; /* Pour aligner verticalement avec le texte */
+  }
+}
