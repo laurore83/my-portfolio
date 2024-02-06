@@ -80,6 +80,10 @@ export default function ContextProvider({ children }) {
     fetchProjets();
   }, []);
 
+  const recentProjects = projets.filter((projet) => projet.type_id === 1);
+  const pastProjects = projets.filter((projet) => projet.type_id === 2);
+  const hackProjects = projets.filter((projet) => projet.type_id === 3);
+  const persoProjects = projets.filter((projet) => projet.type_id === 4);
   // const newLangages = async (newlangages) => {
   //   try {
   //     setLangages(
@@ -95,7 +99,14 @@ export default function ContextProvider({ children }) {
   //   [login, logout, register, newLangages, langages]
   // );
   const contextData = useMemo(
-    () => ({ langages, projets }),
+    () => ({
+      langages,
+      projets,
+      recentProjects,
+      pastProjects,
+      hackProjects,
+      persoProjects,
+    }),
     [langages, projets]
   );
 

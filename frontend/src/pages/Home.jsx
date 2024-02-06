@@ -4,12 +4,16 @@ import { Card } from "/src/components/Card";
 import { MDBBtn, MDBCardImage } from "mdb-react-ui-kit";
 
 export default function Home() {
-  const { projets } = useTheContext();
+  const {
+    langages,
+    recentProjects,
+    pastProjects,
+    persoProjects,
+    hackProjects,
+  } = useTheContext();
 
-  const { langages } = useTheContext();
-  const recentProjects = projets.filter((projet) => projet.type === "1");
-
-  const pastProjects = projets.filter((projet) => projet.type === "2");
+  console.log(hackProjects);
+  console.log(persoProjects);
   return (
     <>
       <div className="accueil">
@@ -56,37 +60,43 @@ export default function Home() {
           />
         </div>
       </section>
-      <div className="profilproject">
-        <div>
-          <h2 className="title-recent-project">Projets récents</h2>
+      <div>
+        <h2 className="title-recent-project">Projets récents</h2>
+      </div>
+      <div className="recent-project-card">
+        <div className="recent-project">
+          {recentProjects.map((projet) => (
+            // <div className="card" key={projet.id}>
+            //   <img className="card-img" src={projet.img} alt="..." />
+            //   <div className="text-dark ">{projet.title}</div>
+            // </div>
+            <Card key={projet.id} {...projet} />
+          ))}
         </div>
-        <div className="recent-project-card">
-          <div className="recent-project">
-            {recentProjects.map((projet) => (
-              <Card key={projet.id} {...projet} />
+        <div className="btn-plus">
+          <MDBBtn className="rounded-pill" color="dark" href="/mesprojets">
+            Voir +
+          </MDBBtn>
+        </div>
+        <div className="past-project-card">
+          <h2 className="title-recent-project">Projets passés</h2>
+          <div className="past-project">
+            {pastProjects.map((projet) => (
+              <div className="card" key={projet.id}>
+                <img className="card-img" src={projet.img} alt="..." />
+                <div className="text-dark ">{projet.title}</div>
+              </div>
+              // <Card key={projet.id} {...projet} />
             ))}
           </div>
           <div className="btn-plus">
-            <MDBBtn className="rounded-pill" color="dark" href="/mesprojets">
+            <MDBBtn
+              className="rounded-pill"
+              color="dark"
+              href="/mesanciensprojets"
+            >
               Voir +
             </MDBBtn>
-          </div>
-          <div className="past-project-card">
-            <h2 className="title-recent-project">Projets passés</h2>
-            <div className="past-project">
-              {pastProjects.map((projet) => (
-                <Card key={projet.id} {...projet} />
-              ))}
-            </div>
-            <div className="btn-plus">
-              <MDBBtn
-                className="rounded-pill"
-                color="dark"
-                href="/mesanciensprojets"
-              >
-                Voir +
-              </MDBBtn>
-            </div>
           </div>
         </div>
       </div>

@@ -2,9 +2,7 @@ import { Projet } from "../components/Projet";
 import { useTheContext } from "../context/Context";
 
 export default function MyPastProjects() {
-  const { projets } = useTheContext();
-
-  const pastProjects = projets.filter((projet) => projet.type === "past");
+  const { pastProjects } = useTheContext();
 
   return (
     <div className="projets-container">

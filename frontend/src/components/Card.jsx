@@ -10,7 +10,7 @@ export default function Card() {
     <div>
       {projets.map((projets) => (
         <div className="card" key={projets.id}>
-          <img className="card-img" src={projets.image} alt="..." />
+          <img className="card-img" src={projets.img} alt="..." />
           <div className="text-dark ">{projets.title}</div>
         </div>
       ))}
@@ -108,10 +108,10 @@ export default function Card() {
 
 Card.propTypes = {
   id: PropTypes.number.isRequired,
-  type: PropTypes.string.isRequired,
+  type_id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
   txt: PropTypes.string.isRequired,
-  github: PropTypes.string.isRequired,
+  lien_github: PropTypes.string.isRequired,
 };
 export { Card };
