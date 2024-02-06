@@ -1,15 +1,15 @@
 import CVButton from "../components/CVbutton";
 import { useTheContext } from "../context/Context";
-import { Card, projetProfil } from "/src/components/Card";
+import { Card } from "/src/components/Card";
 import { MDBBtn, MDBCardImage } from "mdb-react-ui-kit";
 
 export default function Home() {
-  const { langages } = useTheContext();
-  const recentProjects = projetProfil.filter(
-    (projet) => projet.type === "recent"
-  );
+  const { projets } = useTheContext();
 
-  const pastProjects = projetProfil.filter((projet) => projet.type === "past");
+  const { langages } = useTheContext();
+  const recentProjects = projets.filter((projet) => projet.type === "1");
+
+  const pastProjects = projets.filter((projet) => projet.type === "2");
   return (
     <>
       <div className="accueil">

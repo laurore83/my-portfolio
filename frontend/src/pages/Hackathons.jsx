@@ -1,8 +1,10 @@
-import { projetProfil } from "../components/Card";
 import { Projet } from "../components/Projet";
+import { useTheContext } from "../context/Context";
 
 export default function Hackathon() {
-  const pastProjects = projetProfil.filter((projet) => projet.type === "past");
+  const { projets } = useTheContext();
+
+  const pastProjects = projets.filter((projet) => projet.type === "past");
 
   return (
     <div className="projets-container">

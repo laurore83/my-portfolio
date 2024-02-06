@@ -1,10 +1,10 @@
 import { Projet } from "../components/Projet";
-import { projetProfil } from "/src/components/Card";
+import { useTheContext } from "../context/Context";
 
 export default function MyProjects() {
-  const recentProjects = projetProfil.filter(
-    (projet) => projet.type === "recent"
-  );
+  const { projets } = useTheContext();
+
+  const recentProjects = projets.filter((projet) => projet.type === "recent");
   return (
     <div className="projets-container">
       <h1>My Projects</h1>

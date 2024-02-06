@@ -10,7 +10,7 @@ class LangagesManager extends AbstractManager {
   async create(langages) {
     // Execute the SQL INSERT query to add a new user to the "user" table
     const result = await this.database.query(
-      `INSERT INTO ${this.table} (name) VALUES (?, ?)`,
+      `INSERT INTO ${this.table} (name) VALUES (?)`,
       [langages.name]
     );
 

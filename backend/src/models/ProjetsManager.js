@@ -10,13 +10,13 @@ class projetsManager extends AbstractManager {
   async create(projets) {
     // Execute the SQL INSERT query to add a new user to the "user" table
     const result = await this.database.query(
-      `INSERT INTO ${this.table} (title, img, txt, lien_github, type) VALUES (?, ?, ?, ?, ?, ?)`,
+      `INSERT INTO ${this.table} (title, img, txt, lien_github, type_id) VALUES (?, ?, ?, ?, ?)`,
       [
         projets.title,
         projets.img,
         projets.txt,
         projets.lien_github,
-        projets.type,
+        projets.type_id,
       ]
     );
 
@@ -53,13 +53,13 @@ class projetsManager extends AbstractManager {
 
   async update(projets, id) {
     const [rows] = await this.database.query(
-      `update ${this.table} set title = ? set img = ? set txt = ? set lien_github = ? set type = ? where id = ?`,
+      `update ${this.table} set title = ?, img = ?, txt = ?, lien_github = ?, type_id = ? where id = ?`,
       [
         projets.title,
         projets.img,
         projets.txt,
         projets.lien_github,
-        projets.type,
+        projets.type_id,
         id,
       ]
     );
