@@ -2,11 +2,13 @@
 // Register Data Managers for Tables
 /* ************************************************************************* */
 const LangagesManager = require("./models/LangagesManager");
+const ProjetsManager = require("./models/ProjetsManager");
 
 // Import the manager modules responsible for handling data operations on the tables
 
 const managers = [
   LangagesManager,
+  ProjetsManager,
   // Add other managers here
 ];
 

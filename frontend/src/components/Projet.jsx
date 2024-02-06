@@ -1,13 +1,17 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import Pelemele from "./PelemeleGeo";
+//  import Pelemele from "./PelemeleGeo";
 
 const Projet = ({ id, github, title, image }) => (
   <div className="modelProjet" key={id}>
     <div className="grid-container projet">
       <div className="grid-item project-first-view">
         <div className="grid-item photo-projet">
-          <Pelemele />
+          {/* <Pelemele /> */}
+          <div className="grid-img">
+            <img src={image} />
+            <img src={image} />
+          </div>
           <img src={image} />
         </div>
 

@@ -32,7 +32,7 @@ const projetProfil = [
   {
     id: 3,
     type: "recent",
-    title: "Wild Eater",
+    title: "WildEats",
     image: "src/assets/Wildeats.img/logo.wildeats.png",
     txt: "",
 
