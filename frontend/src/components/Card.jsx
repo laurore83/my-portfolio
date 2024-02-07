@@ -1,19 +1,15 @@
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { useTheContext } from "../context/Context";
 
 import PropTypes from "prop-types";
 
-export default function Card() {
-  const { projets } = useTheContext();
+export default function Card({ img, title }) {
   return (
     <div>
-      {projets.map((projets) => (
-        <div className="card" key={projets.id}>
-          <img className="card-img" src={projets.img} alt="..." />
-          <div className="text-dark ">{projets.title}</div>
-        </div>
-      ))}
+      <div className="card">
+        <img className="card-img" src={img} alt={title} />
+        <div className="text-dark ">{title}</div>
+      </div>
     </div>
   );
 }
