@@ -3,12 +3,14 @@
 /* ************************************************************************* */
 const LangagesManager = require("./models/LangagesManager");
 const ProjetsManager = require("./models/ProjetsManager");
+const UploadManager = require("./models/upload.manager");
 
 // Import the manager modules responsible for handling data operations on the tables
 
 const managers = [
   LangagesManager,
   ProjetsManager,
+  UploadManager,
   // Add other managers here
 ];
 

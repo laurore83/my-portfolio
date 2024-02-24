@@ -1,3 +1,5 @@
+CREATE DATABASE if not exists my_portfolio; 
+Use my_portfolio;
  CREATE TABLE
     langages (
         id INT AUTO_INCREMENT PRIMARY KEY,
@@ -37,6 +39,12 @@
         name VARCHAR(255)
       
     );
+     CREATE TABLE upload ( 
+  id int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  url varchar(255) NOT NULL,
+  unique(url),
+  created_at timestamp default CURRENT_TIMESTAMP
+);
 
     INSERT INTO langages(id, name) VALUES(3,"html"),(2,"css");
     INSERT INTO types(id, name) VALUES(3,"html"),(2,"css");
