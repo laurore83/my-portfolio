@@ -5,14 +5,24 @@ Use my_portfolio;
         id INT AUTO_INCREMENT PRIMARY KEY,
         name VARCHAR(255)
     );
+      CREATE TABLE
+    frameworks (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(255)
+      
+    );
  CREATE TABLE
     projets (
         id INT AUTO_INCREMENT PRIMARY KEY,
-            type_id VARCHAR(255),
+        type_id VARCHAR(255),
         title VARCHAR(255),
         img VARCHAR(255),
         txt VARCHAR(2000),
-            lien_github VARCHAR(255)
+        lien_github VARCHAR(255),
+        langages_id INT,
+        FOREIGN KEY (langages_id) REFERENCES langages(id),
+        frameworks_id INT,
+        FOREIGN KEY (frameworks_id) REFERENCES frameworks(id)
     );
      CREATE TABLE
     types (
@@ -20,12 +30,7 @@ Use my_portfolio;
         name VARCHAR(255)
       
     );
-     CREATE TABLE
-    frameworks (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        name VARCHAR(255)
-      
-    );
+   
      CREATE TABLE
     librairies (
         id INT AUTO_INCREMENT PRIMARY KEY,

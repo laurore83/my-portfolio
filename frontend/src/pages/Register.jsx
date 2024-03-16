@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MDBBtn, MDBInput, MDBSwitch } from "mdb-react-ui-kit";
+import { MDBBtn, MDBInput } from "mdb-react-ui-kit";
 import { useTheContext } from "../context/Context";
 
 function Register() {
